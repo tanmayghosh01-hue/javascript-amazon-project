@@ -1,5 +1,5 @@
-import {cart} from '../data/cart.js';
-
+import {cart} from '../javascript-amazon-project-main/data/cart.js';
+import { products } from '../javascript-amazon-project-main/data/products.js';
 
 
 let productsHtml = '';
