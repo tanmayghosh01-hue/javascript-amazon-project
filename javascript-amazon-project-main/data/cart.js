@@ -2,6 +2,8 @@
 export let cart = JSON.parse(localStorage.getItem('cart'));
 
 
+export let itemLength = cart.length;
+
 
 if (!cart) {
   cart = [{
@@ -17,8 +19,9 @@ if (!cart) {
 
 
 
-function saveToStorage() {
+export function saveToStorage() {
   localStorage.setItem('cart', JSON.stringify(cart));
+  document.querySelector('.js-cart-items').innerHTML = `${cart.length} items`
 }
 
 

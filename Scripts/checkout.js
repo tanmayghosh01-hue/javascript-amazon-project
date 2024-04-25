@@ -120,6 +120,8 @@ document.querySelector('.js-order-summary')
 // console.log(cartSummaryHTML)
 
 
+
+
 document.querySelectorAll('.js-delete-link')
     .forEach((link) => {
         link.addEventListener('click', () => {

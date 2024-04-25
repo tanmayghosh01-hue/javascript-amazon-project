@@ -1,4 +1,4 @@
-import {cart, addToCart} from '../javascript-amazon-project-main/data/cart.js';
+import {cart, addToCart, itemLength, saveToStorage} from '../javascript-amazon-project-main/data/cart.js';
 import { products } from '../javascript-amazon-project-main/data/products.js';
 import { formatCurrency } from './utils/money.js';
 
@@ -95,6 +95,10 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     addToCart(productId);
 
     updateCartQuantity();
+
+    itemLength++;
+
+    saveToStorage();
 
     
     // cart.push({
