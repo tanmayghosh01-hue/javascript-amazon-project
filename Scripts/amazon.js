@@ -5,6 +5,7 @@ import { formatCurrency } from './utils/money.js';
 
 
 
+
 let productsHtml = '';
 
 
@@ -96,7 +97,7 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
 
     updateCartQuantity();
 
-    itemLength++;
+    // itemLength++;
 
     saveToStorage();
 
