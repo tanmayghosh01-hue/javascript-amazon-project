@@ -9,16 +9,12 @@ import { formatCurrency } from '../utils/money.js';
 
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 
-import {deliveryOptions, getDeliveryOption} from '../../javascript-amazon-project-main/data/deliveryOptions.js'
+import {deliveryOptions, getDeliveryOption} from '../../javascript-amazon-project-main/data/deliveryOptions.js';
+
 import { renderPaymentSummary } from './paymentSummary.js';
 
 
 
-// let today = dayjs();
-
-// let deliveryDate = today.add(4, 'days');
-
-// console.log(deliveryDate.format('dddd, MMMM D'));
 
 
 export function renderOrderSummary() { 
@@ -166,7 +162,7 @@ export function renderOrderSummary() {
 
                 container.remove()
 
-
+                renderPaymentSummary();
                 // renderPaymentSummary();
                 
             });
@@ -181,6 +177,7 @@ export function renderOrderSummary() {
             const {productId, deliveryOptionId} = element.dataset;
             updateDeliveryOption(productId, deliveryOptionId);
             renderOrderSummary();
+            renderPaymentSummary();
         });
     });
 
