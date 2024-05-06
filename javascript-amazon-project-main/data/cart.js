@@ -18,7 +18,13 @@ if (!cart[0]) {
 console.log(cart)
 
 
-export let itemLength = cart.length;
+export let itemLength = 0;
+
+cart.forEach((cartItem) => {
+  itemLength += cartItem.quantity;
+})
+
+console.log(itemLength);
 
 
 export function saveToStorage() {
