@@ -7,6 +7,8 @@ import { deliveryOptions, getDeliveryOption } from '../../javascript-amazon-proj
 
 import {formatCurrency} from '../utils/money.js'
 
+import { itemLength } from '../../javascript-amazon-project-main/data/cart.js';
+
 export function renderPaymentSummary() {
 
     let productPriceCents  = 0;
@@ -41,7 +43,7 @@ export function renderPaymentSummary() {
             </div>
 
             <div class="payment-summary-row">
-                <div>Items (3):</div>
+                <div>Items (${itemLength}):</div>
                 <div class="payment-summary-money">$${formatCurrency(productPriceCents)}</div>
             </div>
 

@@ -2,7 +2,7 @@
 export const deliveryOptions = [{
     id : '1',
     deliveryDays: 7,
-    priceCents: 1474
+    priceCents: 0
 
 }, {
     id : '2',

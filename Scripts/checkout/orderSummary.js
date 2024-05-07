@@ -37,7 +37,7 @@ export function renderOrderSummary() {
 
         const today = dayjs();
         const deliveryDate = today.add(
-            deliveryOptions.deliveryDays,
+            deliveryOption.deliveryDays,
             'days'
         );
 
