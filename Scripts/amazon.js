@@ -9,7 +9,11 @@ import { formatCurrency } from './utils/money.js';
 let productsHtml = '';
 
 
+// function black_nigger () {
 
+
+  
+// }
 
 
 products.forEach((product) => {
@@ -114,5 +118,5 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
 });
 
 
-console.log(itemLength)
+// console.log(itemLength)
 
