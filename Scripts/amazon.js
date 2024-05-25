@@ -1,5 +1,7 @@
 import {cart, addToCart, itemLength, saveToStorage} from '../javascript-amazon-project-main/data/cart.js';
+
 import { products } from '../javascript-amazon-project-main/data/products.js';
+
 import { formatCurrency } from './utils/money.js';
 
 
@@ -55,6 +57,8 @@ products.forEach((product) => {
               <option value="10">10</option>
             </select>
           </div>
+
+          ${product.extraInfoHTML()}
 
           <div class="product-spacer"></div>
 
