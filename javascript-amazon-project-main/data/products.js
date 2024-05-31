@@ -123,7 +123,7 @@ export function loadProducts(fun) {
     });
 
 
-    console.log('loadProducts');
+    console.log('load Products');
     fun();
 
   });
