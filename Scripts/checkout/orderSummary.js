@@ -29,7 +29,7 @@ export function renderOrderSummary() {
 
         const matchingProduct = getProduct(productId);
 
-        // console.log(matchingProduct);
+        console.log(cart)
 
         const deliveryOptionId = cartItem.deliveryOptionId;
 
