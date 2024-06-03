@@ -14,14 +14,29 @@ import { loadCart } from "../javascript-amazon-project-main/data/cart.js";
 // import "../javascript-amazon-project-main/data/cart-class.js";
 
 async function loadpage() {
-    await loadProductsFetch();
+
+    try {
+
+        // throw 'error1';
+
+        await loadProductsFetch();
 
 
-    const value = await new Promise((resolve) => {
-        loadCart(() => {
-            resolve('value3');
+        const value = await new Promise((resolve, reject) => {
+
+            // throw 'error2';
+
+            loadCart(() => {
+                // reject('error3')
+                resolve('value3');
+            });
         });
-    });
+
+    } catch (error) {
+        console.log('Unexpected error. Please Try again Niggi')
+    }
+
+    
 
     renderOrderSummary();
     renderPaymentSummary();
